@@ -27,7 +27,8 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_NEWRELIC_ENV=production gatsby build",
+    "build:dev": "GATSBY_NEWRELIC_ENV=dev npm run build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",

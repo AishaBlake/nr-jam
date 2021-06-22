@@ -32,5 +32,20 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-newrelic',
+      options: {
+        configs: {
+          instrumentationType: 'proAndSPA',
+          accountId: '2985707',
+          trustKey: '2985707',
+          agentID: '990444070',
+          licenseKey: 'NRJS-396ed35973c966e791a',
+          applicationID: '990444070',
+          beacon: 'bam.nr-data.net',
+          errorBeacon: 'bam.nr-data.net'
+        }
+      }
+    }
   ],
 }
